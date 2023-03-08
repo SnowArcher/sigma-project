@@ -1,0 +1,56 @@
+.footer {
+    margin-right: calc(200 / 1920) * 100vw;
+    margin-left: calc(200 / 1920) * 100vw;
+    display: flex;
+    justify-content: space-around;
+    .footer__logo {
+        img {
+            margin-bottom: 15px;
+        }
+        >p {
+            font-weight: 400;
+            font-size: 1.125em;
+            line-height: 28px;
+            color: #646464;
+        }
+    }
+    .footer__quick, .footer__company, .footer__contact, .footer__social {
+        p {
+            font-weight: 600;
+            font-size: 1.5em;
+            line-height: 40px;
+            color: #212121;
+            margin-bottom: 25px;
+        }
+        li {
+            font-weight: 400;
+            font-size: 1.125em;
+            line-height: 28px;
+            color: #646464;
+            margin-bottom: 10px;
+        }
+    }
+    .footer__social {
+        p {
+            margin-bottom: 20px;
+        }
+        .footer__social_items {
+            display: flex;
+            button {
+                width: 37.17px;
+                height: 37.17px;
+                background-color: #D5D5D5;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 8px;
+                transition: background-color 0.5s ease;
+                &:hover {
+                    background-color: #37806B;
+                }
+            }
+        }
+
+    }
+}
