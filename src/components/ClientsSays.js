@@ -1,5 +1,8 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {ClientsFeedback} from './ClientsFeedback';
+import { BtnNext } from './BtnNext';
+import { BtnPrev } from './BtnPrev';
 import 'swiper/css';
 export function ClientsSays() {
     return (
@@ -9,31 +12,17 @@ export function ClientsSays() {
             <div className="clients-says__slider">
                 <Swiper
                     loop = {true}
-                    autoHeight = {true}
                 >
+                    <BtnNext />
+                    <BtnPrev />
                     <SwiperSlide>
-                        <div className="says-slide">
-                            <div className="says-slide__content">
-                                <div className='says-slide__content_photo'>
-                                    <div className='person-photo'>
-                                        <img src="../img/client_photo_1.jpg" alt="person" />
-                                    </div>
-                                </div>
-                                <div className='says-slide__content_message'>
-                                    <h1>Louis Saville<span>/CEO at Google inc</span></h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-elit, sed do eiusmod tempor incididunt ut labore
-et dolore magna aliqua.</p>
-                                    <img src="../img/client_decore.svg" alt="decore" />
-                                </div>
-                            </div>
-                        </div>
+                        <ClientsFeedback />
                     </SwiperSlide>
                     <SwiperSlide>
-                        slide 2
+                        <ClientsFeedback />
                     </SwiperSlide>
                     <SwiperSlide>
-                        slide 3
+                        <ClientsFeedback />
                     </SwiperSlide>
                 </Swiper>
             </div>

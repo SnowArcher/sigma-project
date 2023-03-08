@@ -675,17 +675,16 @@ body {
   line-height: 30px;
   color: #646464;
 }
-.clients-says h1 {
+.clients-says > h1 {
   text-align: center;
   font-weight: 500;
   font-size: 3em;
   line-height: 72px;
   color: #212121;
-  margin-bottom: 100px;
 }
 .clients-says .clients-says__slider {
   max-width: 1379px;
-  height: 320px;
+  height: 420px;
 }
 .clients-says .clients-says__slider .swiper {
   width: 100%;
@@ -694,12 +693,18 @@ body {
 .clients-says .clients-says__slider .says-slide {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .clients-says .clients-says__slider .says-slide .says-slide__content {
   position: relative;
   max-width: 571px;
   min-height: 230px;
-  margin: 30px 70px;
+  margin: 130px 70px 30px 70px;
   -webkit-box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
           box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
   border-radius: 70px 0px;
@@ -721,4 +726,59 @@ body {
   border-radius: 35px 0px;
   overflow: hidden;
   z-index: 2;
+}
+.clients-says .clients-says__slider .says-slide .says-slide__content .says-slide__content_message {
+  position: relative;
+  padding: 40px 40px 10px 100px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+.clients-says .clients-says__slider .says-slide .says-slide__content .says-slide__content_message h1 span:nth-child(1) {
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 33px;
+  color: #212121;
+  margin-bottom: 8px;
+}
+.clients-says .clients-says__slider .says-slide .says-slide__content .says-slide__content_message h1 span:nth-child(2) {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 22px;
+  color: #646464;
+}
+.clients-says .clients-says__slider .says-slide .says-slide__content .says-slide__content_message p {
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 28px;
+  color: #646464;
+}
+.clients-says .clients-says__slider .says-slide .says-slide__content .says-slide__content_message .message-decore {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.clients-says .clients-says__slider .btnNext, .clients-says .clients-says__slider .btnPrev {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 3;
+  top: 5px;
+}
+.clients-says .clients-says__slider .btnNext:hover, .clients-says .clients-says__slider .btnPrev:hover {
+  background-color: #37806B;
+}
+.clients-says .clients-says__slider .btnNext {
+  right: 20px;
+}
+.clients-says .clients-says__slider .btnNext svg {
+  margin: 10px 13px 10px 13px;
+}
+.clients-says .clients-says__slider .btnPrev {
+  right: 80px;
+}
+.clients-says .clients-says__slider .btnPrev svg {
+  margin: 10px 14px 10px 12px;
 }

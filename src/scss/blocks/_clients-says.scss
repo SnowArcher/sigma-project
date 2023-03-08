@@ -16,17 +16,16 @@
         line-height: 30px;
         color: #646464;
     }
-    h1 {
+    > h1 {
         text-align: center;
         font-weight: 500;
         font-size: 3em;
         line-height: 72px;
         color: #212121;
-        margin-bottom: 100px;
     }
     .clients-says__slider {
         max-width: 1379px;
-        height: 320px;
+        height: 420px;
         .swiper {
             width: 100%;
             height: 100%;
@@ -39,11 +38,13 @@
         .says-slide {
             width: 100%;
             height: 100%;
+            display: flex;
+            justify-content: space-between;
             .says-slide__content {
                 position: relative;
                 max-width: 571px;
                 min-height: 230px;
-                margin: 30px 70px;
+                margin: 130px 70px 30px 70px;
                 box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
                 border-radius: 70px 0px;
                 .says-slide__content_photo {
@@ -61,8 +62,61 @@
                     }                  
                 }
                 .says-slide__content_message {
-
+                    position: relative;
+                    padding: 40px 40px 10px 100px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: normal;
+                    h1 {
+                        span:nth-child(1) {
+                            font-weight: 700;
+                            font-size: 1.5em;
+                            line-height: 33px;
+                            color: #212121;
+                            margin-bottom: 8px;
+                        }
+                        span:nth-child(2) {
+                            font-weight: 400;
+                            font-size: 1em;
+                            line-height: 22px;
+                            color: #646464
+                        }
+                    }
+                    p {
+                        font-weight: 400;
+                        font-size: 1.125em;
+                        line-height: 28px;
+                        color: #646464;
+                    }
+                    .message-decore {
+                        position: absolute;
+                        top: 30px;
+                        right: 30px;
+                    }
                 }
+            }
+        }
+        .btnNext, .btnPrev {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            z-index: 3;
+            top: 5px;
+            &:hover {
+                background-color: #37806B;
+            }
+        }
+        .btnNext {
+            right: 20px;
+            svg {
+                margin: 10px 13px 10px 13px;
+            }
+        }
+        .btnPrev {
+            right: 80px;
+            svg {
+                margin: 10px 14px 10px 12px;
             }
         }
     }
