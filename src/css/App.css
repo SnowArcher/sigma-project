@@ -560,7 +560,6 @@ body {
 }
 .sing-up .sing-up__content .sing-up__form .sing-up__form_name {
   margin-top: 40px;
-  margin-bottom: 60px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -570,12 +569,40 @@ body {
           justify-content: space-between;
 }
 .sing-up .sing-up__content .sing-up__form .sing-up__form_name .first-name, .sing-up .sing-up__content .sing-up__form .sing-up__form_name .last-name {
+  position: relative;
   max-width: 317px;
   height: 48px;
   width: 40%;
   background: #EEEEEE;
   border-radius: 20px 0px;
   padding: 15px 20px;
+  border: 1px solid #FFFFFF;
+}
+.sing-up .sing-up__content .sing-up__form .sing-up__form_name .first-name:focus, .sing-up .sing-up__content .sing-up__form .sing-up__form_name .last-name:focus {
+  border-color: #37806B;
+}
+.sing-up .sing-up__content .sing-up__form .sing-up__form_name .first-name.error, .sing-up .sing-up__content .sing-up__form .sing-up__form_name .last-name.error {
+  border-color: red;
+}
+.sing-up .sing-up__content .sing-up__form .name-errors {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  margin-bottom: 30px;
+}
+.sing-up .sing-up__content .sing-up__form .name-errors p {
+  color: red;
+  padding-left: 20px;
+  width: 40%;
+  font-size: 0.8em;
 }
 .sing-up .sing-up__content .sing-up__form .sign-up__form_email {
   width: 100%;
@@ -583,13 +610,38 @@ body {
   height: 48px;
   border-radius: 20px 0px;
   padding: 15px 20px;
-  margin-bottom: 8.5185185185vh;
+  border: 1px solid #FFFFFF;
+}
+.sing-up .sing-up__content .sing-up__form .sign-up__form_email:focus {
+  border-color: #37806B;
+}
+.sing-up .sing-up__content .sing-up__form .sign-up__form_email.error {
+  border-color: red;
+}
+.sing-up .sing-up__content .sing-up__form .email-error {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sing-up .sing-up__content .sing-up__form .email-error p {
+  color: red;
+  padding-left: 20px;
+  font-size: 0.8em;
 }
 .sing-up .sing-up__content .sing-up__form button {
   width: 180px;
   height: 50px;
   background: #37806B;
-  border-radius: 0px 0px 20px 0px;
+  border-radius: 20px 0px 20px 0px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -600,4 +652,73 @@ body {
 }
 .sing-up .sing-up__content .sing-up__form button:hover {
   background: #11a87d;
+}
+
+.clients-says {
+  max-width: 1920px;
+  height: 95vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10.4166666667vw;
+  padding-right: 10.4166666667vw;
+  margin-bottom: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.clients-says h4 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 30px;
+  color: #646464;
+}
+.clients-says h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 72px;
+  color: #212121;
+  margin-bottom: 100px;
+}
+.clients-says .clients-says__slider {
+  max-width: 1379px;
+  height: 320px;
+}
+.clients-says .clients-says__slider .swiper {
+  width: 100%;
+  height: 100%;
+}
+.clients-says .clients-says__slider .says-slide {
+  width: 100%;
+  height: 100%;
+}
+.clients-says .clients-says__slider .says-slide .says-slide__content {
+  position: relative;
+  max-width: 571px;
+  min-height: 230px;
+  margin: 30px 70px;
+  -webkit-box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+          box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+  border-radius: 70px 0px;
+}
+.clients-says .clients-says__slider .says-slide .says-slide__content .says-slide__content_photo {
+  position: absolute;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: -65px;
+}
+.clients-says .clients-says__slider .says-slide .says-slide__content .says-slide__content_photo .person-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 35px 0px;
+  overflow: hidden;
+  z-index: 2;
 }

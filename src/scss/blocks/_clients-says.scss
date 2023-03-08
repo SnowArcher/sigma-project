@@ -1,0 +1,69 @@
+.clients-says {
+    max-width: 1920px;
+    height: 95vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: calc(200 / 1920) * 100vw;
+    padding-right: calc(200 / 1920) * 100vw;
+    margin-bottom: 150px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    h4 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.25em;
+        line-height: 30px;
+        color: #646464;
+    }
+    h1 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 3em;
+        line-height: 72px;
+        color: #212121;
+        margin-bottom: 100px;
+    }
+    .clients-says__slider {
+        max-width: 1379px;
+        height: 320px;
+        .swiper {
+            width: 100%;
+            height: 100%;
+            .swiper-wrapper {
+                .swiper-slide {
+
+                }
+            }
+        }
+        .says-slide {
+            width: 100%;
+            height: 100%;
+            .says-slide__content {
+                position: relative;
+                max-width: 571px;
+                min-height: 230px;
+                margin: 30px 70px;
+                box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+                border-radius: 70px 0px;
+                .says-slide__content_photo {
+                    position: absolute;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    left: -65px;
+                    .person-photo {
+                        width: 130px;
+                        height: 130px;
+                        border-radius: 35px 0px;
+                        overflow: hidden;
+                        z-index: 2;
+                    }                  
+                }
+                .says-slide__content_message {
+
+                }
+            }
+        }
+    }
+}

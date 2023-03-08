@@ -23,38 +23,54 @@ export function SingUp() {
                     <h1>DON’T FORGET TO SIGN UP<span></span></h1>
                     <p>Find out early about all upcoming promotions and new product releases with<br/>our newsletter.</p>
                 </div>
-                <form className="sing-up__form" onSubmit={handleSubmit(onSubmit)}>
+                <form className="sing-up__form" action="#" onSubmit={handleSubmit(onSubmit)}>
                     <div className="sing-up__form_name">
                         <input 
-                            {...register("first-name", {
-                                required: "Поле має бути заповненим"
+                            {...register("firstName", {
+                                required: "First name is required",
+                                pattern: {
+                                    value: /^[A-Z][a-z]*$/,
+                                    message: "Invalid first name"
+                                }
                             })}
                             type="text" 
-                            className="first-name" 
+                            className={`${errors.firstName? 'first-name error' : 'first-name'}`} 
                             placeholder="Enter your name....."
-                        ></input>
+                        >
+                        </input>
                         <input
-                            {...register("last-name", {
-                                required: "Поле має бути заповненим"
+                            {...register("lastName", {
+                                required: "Last name is required",
+                                pattern: {
+                                    value: /^[A-Z][a-z]*$/,
+                                    message: "Invalid last name"
+                                }
                             })} 
                             type="text" 
-                            className="last-name" 
+                            className={`${errors.lastName? 'last-name error' : 'last-name'}`} 
                             placeholder="Enter your surname....."
                         ></input>
                     </div>
+                    <div className="name-errors">
+                        <p>{errors?.firstName?.message}</p>
+                        <p>{errors?.lastName?.message}</p>
+                    </div>
                     <input 
                         {...register('email', {
-                            required: 'Email is required',
+                            required: "Email is required",
                             pattern: {
                                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                                 message: "Invalid email address"
                             }
                         })}
                         type="text" 
-                        className="sign-up__form_email" 
-                        placeholder="Enter your e-mail....."
+                        className={`${errors.email? 'sign-up__form_email error' : 'sign-up__form_email'}`} 
+                        placeholder="Enter your email....."
                     ></input>
-                    <button>Subscribe</button>
+                    <div className="email-error">
+                        <p>{errors?.email?.message}</p>
+                    </div>
+                    <button type="submit" disabled={!isValid}>Subscribe</button>
                 </form>
             </div>
         </div>
