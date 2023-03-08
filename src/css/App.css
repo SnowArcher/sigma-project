@@ -398,6 +398,7 @@ body {
 .footer {
   margin-right: 10.4166666667vw;
   margin-left: 10.4166666667vw;
+  margin-bottom: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,6 +428,9 @@ body {
   color: #646464;
   margin-bottom: 10px;
 }
+.footer .footer__quick.links li, .footer .footer__company.links li, .footer .footer__contact.links li, .footer .footer__social.links li {
+  cursor: pointer;
+}
 .footer .footer__social p {
   margin-bottom: 20px;
 }
@@ -440,6 +444,14 @@ body {
   height: 37.17px;
   background-color: #D5D5D5;
   border-radius: 50%;
+  margin-right: 8px;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+.footer .footer__social .footer__social_items button:hover {
+  background-color: #37806B;
+}
+.footer .footer__social .footer__social_items button a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,10 +461,143 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 8px;
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
 }
-.footer .footer__social .footer__social_items button:hover {
-  background-color: #37806B;
+
+.footer__year {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  border-top: 1px solid #C4C4C4;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 25px;
+  color: #646464;
+}
+.footer__year a {
+  color: #37806B !important;
+}
+
+.sing-up {
+  max-width: 1920px;
+  height: 95vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10.4166666667vw;
+  padding-right: 10.4166666667vw;
+  margin-bottom: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sing-up .sing-up__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 772px;
+  max-height: 503px;
+}
+.sing-up .sing-up__content .sing-up__title h1 {
+  position: relative;
+  padding-bottom: 35px;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  color: #212121;
+}
+.sing-up .sing-up__content .sing-up__title h1 span {
+  width: 70%;
+  bottom: 0;
+  left: 15%;
+  position: absolute;
+  border: 1px solid #C4C4C4;
+}
+.sing-up .sing-up__content .sing-up__title p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 28px;
+  text-align: center;
+  color: #646464;
+}
+.sing-up .sing-up__content .sing-up__form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125em;
+  line-height: 55px;
+  color: #646464;
+}
+.sing-up .sing-up__content .sing-up__form .sing-up__form_name {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sing-up .sing-up__content .sing-up__form .sing-up__form_name .first-name, .sing-up .sing-up__content .sing-up__form .sing-up__form_name .last-name {
+  max-width: 317px;
+  height: 48px;
+  width: 40%;
+  background: #EEEEEE;
+  border-radius: 20px 0px;
+  padding: 15px 20px;
+}
+.sing-up .sing-up__content .sing-up__form .sign-up__form_email {
+  width: 100%;
+  background: #EEEEEE;
+  height: 48px;
+  border-radius: 20px 0px;
+  padding: 15px 20px;
+  margin-bottom: 8.5185185185vh;
+}
+.sing-up .sing-up__content .sing-up__form button {
+  width: 180px;
+  height: 50px;
+  background: #37806B;
+  border-radius: 0px 0px 20px 0px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125em;
+  line-height: 55px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.sing-up .sing-up__content .sing-up__form button:hover {
+  background: #11a87d;
 }

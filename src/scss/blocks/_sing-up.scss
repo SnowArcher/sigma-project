@@ -1,0 +1,99 @@
+.sing-up {
+    max-width: 1920px;
+    height: 95vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: calc(200 / 1920) * 100vw;
+    padding-right: calc(200 / 1920) * 100vw;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    .sing-up__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 772px;
+        max-height: 503px;
+        .sing-up__title {
+            h1 {
+                position: relative;
+                padding-bottom: 35px;
+                margin-bottom: 40px;
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size:  3em;
+                line-height: 28px;
+                letter-spacing: 0.08em;
+                color: #212121;
+                span {
+                    width: 70%;
+                    bottom: 0;
+                    left: 15%;
+                    position: absolute;
+                    border: 1px solid #C4C4C4;
+                }
+            }
+            p {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.125em;
+                line-height: 28px;
+                text-align: center;
+                color: #646464;
+            }
+        }
+        .sing-up__form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.125em;
+            line-height: 55px;
+            color: #646464;
+            .sing-up__form_name {
+                margin-top: 40px;
+                margin-bottom: 60px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .first-name, .last-name {
+                    max-width: 317px;
+                    height: 48px;
+                    width: 40%;
+                    background: #EEEEEE;
+                    border-radius: 20px 0px;
+                    padding: 15px 20px;
+                }
+            }
+            .sign-up__form_email {
+                width: 100%;
+                background: #EEEEEE;
+                height: 48px;
+                border-radius: 20px 0px;
+                padding: 15px 20px;
+                margin-bottom: calc(92 / 1080) * 100vh;
+            }
+            button {
+                width: 180px;
+                height: 50px;
+                background: #37806B;
+                border-radius: 0px 0px 20px 0px;
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1.125em;
+                line-height: 55px;
+                text-align: center;
+                color: #FFFFFF;
+                &:hover {
+                    background: #11a87d;
+                }
+            }
+        }
+    }
+}
