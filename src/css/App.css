@@ -782,3 +782,74 @@ body {
 .clients-says .clients-says__slider .btnPrev svg {
   margin: 10px 14px 10px 12px;
 }
+
+.services {
+  max-width: 1920px;
+  height: 95vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10.4166666667vw;
+  padding-right: 10.4166666667vw;
+  margin-bottom: 150px;
+}
+.services > h4 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25em;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: #646464;
+}
+.services > h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 78px;
+  color: #212121;
+  margin-bottom: 40px;
+}
+.services .services__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.services .services__links .services__links_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 205px;
+  height: 46px;
+  border: 5px solid #37806B;
+  background: #37806B;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 78px;
+  margin-right: 3.6458333333vw;
+  -webkit-transition: background-color 0.3s, border-color 0.3s ease;
+  transition: background-color 0.3s, border-color 0.3s ease;
+}
+.services .services__links .services__links_item.active {
+  background: #FFFFFF;
+  color: #37806B;
+}
+.services .services__links .services__links_item:not(.active):hover {
+  background: #11a87d;
+  border: #11a87d;
+}
