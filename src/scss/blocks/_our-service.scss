@@ -1,6 +1,6 @@
 .services {
     max-width: 1920px;
-    height: 95vh;
+    min-height: 95vh;
     margin-right: auto;
     margin-left: auto;
     padding-left: calc(150 / 1920) * 100vw;
@@ -65,13 +65,14 @@
     .services__content {
         .all-services {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: space-around;
             align-items: center;
             padding-top: 30px;
             .all-services__item {
                 position: relative;
-                max-width: 477px;
-                width: 30%;
+                width: 470px;
+                margin: 0 10px 30px;
                 box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
                 border-radius: 60px 0px;
                 font-family: 'Open Sans', sans-serif;
@@ -81,17 +82,64 @@
                     top: 35px;
                     left: 40px;
                 }
-                &:nth-child(2) {
-                    color: #FFFFFF;
-                    background: #CAA892;
-                }
                 h1 {
                     margin: 40px 15px 5px 100px;
+                    font-weight: 700;
+                    font-size: 1.5em;
+                    color: #212121;
                 }
                 p {
                     margin: 0 15px 20px 100px;
+                    font-weight: 400;
+                    font-size: 1.125em;
+                    letter-spacing: -0.01em;
+                    color: #646464;
+                }
+                &:nth-child(2) {
+                    h1, p {color: #FFFFFF;}
+                    background: #CAA892;
                 }
             }
         }
+        .service-items {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 30px;
+            .service-item {
+                position: relative;
+                width: 470px;
+                margin: 0 10px 30px;
+                box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+                border-radius: 60px 0px;
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                img {
+                    position: absolute;
+                    top: 35px;
+                    left: 40px;
+                }
+                h1 {
+                    margin: 40px 15px 5px 100px;
+                    font-weight: 700;
+                    font-size: 1.5em;
+                    color: #212121;
+                }
+                p {
+                    margin: 0 15px 20px 100px;
+                    font-weight: 400;
+                    font-size: 1.125em;
+                    letter-spacing: -0.01em;
+                    color: #646464;
+                }
+                &.arch {
+                    h1, p {color: #FFFFFF;}
+                    background: #CAA892;
+                }
+            }
+        }    
     }
 }
