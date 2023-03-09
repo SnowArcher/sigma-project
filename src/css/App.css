@@ -788,8 +788,8 @@ body {
   height: 95vh;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10.4166666667vw;
-  padding-right: 10.4166666667vw;
+  padding-left: 7.8125vw;
+  padding-right: 7.8125vw;
   margin-bottom: 150px;
 }
 .services > h4 {
@@ -800,6 +800,8 @@ body {
   line-height: 28px;
   letter-spacing: -0.01em;
   color: #646464;
+  padding-left: 2.6041666667vw;
+  padding-right: 2.6041666667vw;
 }
 .services > h1 {
   font-family: "Poppins", sans-serif;
@@ -808,6 +810,8 @@ body {
   font-size: 3em;
   line-height: 78px;
   color: #212121;
+  padding-left: 2.6041666667vw;
+  padding-right: 2.6041666667vw;
   margin-bottom: 40px;
 }
 .services .services__links {
@@ -817,6 +821,8 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-left: 2.6041666667vw;
+  padding-right: 2.6041666667vw;
   margin-bottom: 20px;
 }
 .services .services__links .services__links_item {
@@ -852,4 +858,41 @@ body {
 .services .services__links .services__links_item:not(.active):hover {
   background: #11a87d;
   border: #11a87d;
+}
+.services .services__content .all-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+.services .services__content .all-services .all-services__item {
+  position: relative;
+  max-width: 477px;
+  width: 30%;
+  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+  border-radius: 60px 0px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+.services .services__content .all-services .all-services__item img {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+}
+.services .services__content .all-services .all-services__item:nth-child(2) {
+  color: #FFFFFF;
+  background: #CAA892;
+}
+.services .services__content .all-services .all-services__item h1 {
+  margin: 40px 15px 5px 100px;
+}
+.services .services__content .all-services .all-services__item p {
+  margin: 0 15px 20px 100px;
 }
