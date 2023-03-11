@@ -1178,3 +1178,27 @@ body {
   height: 50%;
   border-bottom: 2px solid #E0E0E0;
 }
+
+.progress-wrapper {
+  position: relative;
+  max-width: 1920px;
+  margin: 5px auto;
+  width: 90%;
+  height: 20px;
+  background: #E0E0E0;
+  border-radius: 10px;
+  z-index: 4;
+  text-align: center;
+}
+.progress-wrapper .progress-wrapper__style {
+  position: absolute;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #37806B;
+  z-index: 5;
+}
+.progress-wrapper .progress-wrapper__percent {
+  position: relative;
+  z-index: 6;
+  color: #FFFFFF;
+}
