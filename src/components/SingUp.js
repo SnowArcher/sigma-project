@@ -17,7 +17,7 @@ export function SingUp() {
         reset();
     }
     return (
-        <div className="sing-up">
+        <div className="sing-up" id='contact'>
             <div className="sing-up__content">
                 <div className="sing-up__title">
                     <h1>DON’T FORGET TO SIGN UP<span></span></h1>

@@ -1,6 +1,6 @@
 export function LatestNews() {
     return (
-        <div className="latest-news">
+        <div className="latest-news" id='blog'>
             <h4>LETEST NEWS</h4>
             <h1>From Our Blog</h1>
             <div className="latest-news__content">

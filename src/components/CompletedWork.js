@@ -1,6 +1,6 @@
 export function CompletedWork() {
     return (
-        <div className="completed-works">
+        <div className="completed-works" id='project'>
             <h1>3000+ Completed Work<br />Which WE have Successfully Done</h1>
             <div className="completed-works__items">
                 <div className="completed-works__items_projects">

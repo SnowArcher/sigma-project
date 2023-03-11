@@ -1,6 +1,6 @@
 export function TwentyYears() {
     return (
-        <div className="twenty-years">
+        <div className="twenty-years" id='shop'>
             <div className="twenty-years__content">
                 <img src="../img/20years.svg" alt="20years" />
                 <h1>Years Of Successful<br />Working<br />The Market</h1>

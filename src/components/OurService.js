@@ -7,7 +7,7 @@ import { Planning } from "./Planning";
 export function OurService() {
     const [currentContent, setContent] = useState(1);
     return (
-        <div className="services">
+        <div className="services" id='services'>
             <h4>WHAT WE DO</h4>
             <h1>Our Service</h1>
             <ul className="services__links">

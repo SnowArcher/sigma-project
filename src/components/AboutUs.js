@@ -1,6 +1,6 @@
 export function AboutUs() {
     return (
-        <div className="about">
+        <div className="about" id="about">
             <div className="about__img">
                 <div className="about__img_decore"></div>
                 <div className="about__img_item">

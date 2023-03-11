@@ -1,7 +1,7 @@
 export function Hero() {
     return (
         <div className="hero">
-            <div className="hero__content">
+            <div className="hero__content" id='home'>
                 <h4>MODERN INTERIOR</h4>
                 <h1>Create Your<br />Interior Design.</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

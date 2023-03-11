@@ -1,4 +1,5 @@
 //import { useState } from "react";
+import { HashLink } from "react-router-hash-link"
 
 export function NavMenu() {
     // const [fix, setFix] = useState(false);
@@ -16,14 +17,14 @@ export function NavMenu() {
                 <img src="../img/logo.svg" alt="logo" />
             </div>
             <ul className="navmenu__list">
-                <li>HOME</li>
-                <li>PROJECT</li>
-                <li>SERVICES</li>
-                <li>ABOUT</li>
-                <li>BLOG</li>
-                <li>SHOP</li>
-                <li>CONTACT</li>
-                <li>Sign Up</li>
+                <li><HashLink to="/#home">HOME</HashLink></li>
+                <li><HashLink to="/#project">PROJECT</HashLink></li>
+                <li><HashLink to="/#services">SERVICES</HashLink></li>
+                <li><HashLink to="/#about">ABOUT</HashLink></li>
+                <li><HashLink to="/#blog">BLOG</HashLink></li>
+                <li><HashLink to="/#shop">SHOP</HashLink></li>
+                <li><HashLink to="/#contact">CONTACT</HashLink></li>
+                <li><HashLink to="/#sign">Sign Up</HashLink></li>
             </ul>
         </nav>
     )
