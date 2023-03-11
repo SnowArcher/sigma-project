@@ -45,7 +45,7 @@ body {
   margin-left: auto;
   padding-left: 10.4166666667vw;
   padding-right: 10.4166666667vw;
-  margin-top: 4.6296296296vh;
+  margin-top: 34px;
   height: 46px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1181,8 +1181,8 @@ body {
 
 .progress-wrapper {
   position: relative;
-  max-width: 1920px;
-  margin: 5px auto;
+  width: 100%;
+  margin: 5px auto 0 auto;
   width: 90%;
   height: 20px;
   background: #E0E0E0;
@@ -1195,10 +1195,17 @@ body {
   height: 20px;
   border-radius: 10px;
   background-color: #37806B;
+  -webkit-transition: width 0.5s ease, background-color 0.5s ease;
+  transition: width 0.5s ease, background-color 0.5s ease;
   z-index: 5;
 }
 .progress-wrapper .progress-wrapper__percent {
   position: relative;
   z-index: 6;
   color: #FFFFFF;
+}
+.progress-wrapper.fixed {
+  position: fixed;
+  top: 0;
+  left: 5%;
 }
