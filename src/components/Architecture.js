@@ -6,7 +6,7 @@ export function Architecture() {
         <div className="service-items">
             {Data["architecture"].map((value, index) => {
                 return <ServiceItem key={index}
-                    src={2}
+                    src={3}
                     title={value.title}
                     description={value.description}
                 />

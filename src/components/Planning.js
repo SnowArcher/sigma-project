@@ -6,7 +6,7 @@ export function Planning() {
         <div className="service-items">
             {Data["planning"].map((value, index) => {
                 return <ServiceItem key={index}
-                    src={3}
+                    src={4}
                     title={value.title}
                     description={value.description}
                 />

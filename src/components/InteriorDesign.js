@@ -6,7 +6,7 @@ export function InteriorDesign() {
         <div className="service-items">
             {Data["interior"].map((value, index) => {
                 return <ServiceItem key={index}
-                    src={1}
+                    src={2}
                     title={value.title}
                     description={value.description}
                 />
