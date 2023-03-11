@@ -1,7 +1,7 @@
 .hero {
     max-width: 1920px;
     max-height: 1080px;
-    height: 95vh;
+    min-height: 95vh;
     margin-right: auto;
     margin-left: auto;
     padding-left: calc(200 / 1920) * 100vw;

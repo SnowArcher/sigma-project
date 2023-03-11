@@ -108,7 +108,7 @@ body {
 .hero {
   max-width: 1920px;
   max-height: 1080px;
-  height: 95vh;
+  min-height: 95vh;
   margin-right: auto;
   margin-left: auto;
   padding-left: 10.4166666667vw;
@@ -213,9 +213,10 @@ body {
 .about {
   position: relative;
   max-width: 1920px;
-  height: 95vh;
+  min-height: 95vh;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 70px;
   padding-left: 10.4166666667vw;
   padding-right: 10.4166666667vw;
   margin-bottom: 250px;
@@ -307,9 +308,10 @@ body {
 .twenty-years {
   position: relative;
   max-width: 1920px;
-  height: 95vh;
+  min-height: 95vh;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 70px;
   padding-left: 10.4166666667vw;
   padding-right: 10.4166666667vw;
   margin-bottom: 150px;
@@ -484,9 +486,10 @@ body {
 
 .sing-up {
   max-width: 1920px;
-  height: 95vh;
+  min-height: 95vh;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 70px;
   padding-left: 10.4166666667vw;
   padding-right: 10.4166666667vw;
   margin-bottom: 150px;
@@ -659,6 +662,7 @@ body {
   min-height: 95vh;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 70px;
   padding-left: 10.4166666667vw;
   padding-right: 10.4166666667vw;
   margin-bottom: 150px;
@@ -788,6 +792,7 @@ body {
   min-height: 95vh;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 70px;
   padding-left: 7.8125vw;
   padding-right: 7.8125vw;
   margin-bottom: 150px;
@@ -961,6 +966,7 @@ body {
   min-height: 95vh;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 70px;
   padding-left: 10.4166666667vw;
   padding-right: 10.4166666667vw;
   margin-bottom: 150px;
@@ -1058,6 +1064,7 @@ body {
   min-height: 95vh;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 70px;
   padding-left: 10.4166666667vw;
   padding-right: 10.4166666667vw;
   margin-bottom: 150px;
