@@ -1,3 +1,5 @@
+import { HashLink } from "react-router-hash-link"
+
 export function Hero() {
     return (
         <div className="hero">
@@ -8,7 +10,7 @@ export function Hero() {
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     veniam, quis nostrud exercitation.
                 </p>
-                <button>CONTACT</button>
+                <HashLink to="/#contact"><button>CONTACT</button></HashLink>
             </div>
             <div className="hero__img">
                 <div className="hero__img_item">
